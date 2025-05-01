@@ -492,6 +492,9 @@
   </div>
 
   <script>
+    document.addEventListener('dblclick', function(event) {
+  event.preventDefault();
+}, { passive: false });
     document.addEventListener("DOMContentLoaded", async function () {
       // [Previous JavaScript remains exactly the same]
       // Get match ID from URL
